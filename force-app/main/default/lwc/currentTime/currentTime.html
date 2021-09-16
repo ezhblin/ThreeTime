@@ -1,0 +1,34 @@
+<template>
+    <div>
+        <p class="time">
+            <lightning-formatted-date-time 
+                value={currentTime} 
+                hour="2-digit" 
+                minute="2-digit"
+                second="2-digit" 
+                time-zone="Europe/Minsk"
+                time-zone-name="short"
+            ></lightning-formatted-date-time>
+        </p>
+        <p class="time">
+            <lightning-formatted-date-time 
+                value={currentTime} 
+                hour="2-digit" 
+                minute="2-digit"
+                second="2-digit" 
+                time-zone="UTC"
+                time-zone-name="short"
+            ></lightning-formatted-date-time>
+        </p>
+        <p class="time">
+            <lightning-formatted-date-time 
+                value={currentTime} 
+                hour="2-digit" 
+                minute="2-digit" 
+                second="2-digit" 
+                time-zone="America/Los_Angeles"
+                time-zone-name="short"
+            ></lightning-formatted-date-time>
+        </p>
+    </div>
+</template>
